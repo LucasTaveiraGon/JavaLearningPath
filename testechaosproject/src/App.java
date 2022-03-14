@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Main {
+public class App {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -49,16 +49,36 @@ public class Main {
 		quociente = resto / moeda;
 		System.out.println(quociente + " moeda(s) de R$ 1.00");
 		resto = resto % moeda;
+
 		moeda = 50;
 		quociente = resto / moeda;
 		System.out.println(quociente + " moeda(s) de R$ 0.50");
 		resto = resto % moeda;
-		//continue o seu código aqui
+		
+        moeda = 25;
+		quociente = resto / moeda;
+		System.out.println(quociente + " moeda(s) de R$ 0.25");
+		resto = resto % moeda;
+
+        moeda = 10;
+		quociente = resto / moeda;
+		System.out.println(quociente + " moeda(s) de R$ 0.10");
+		resto = resto % moeda;
+
+        moeda = 5;
+		quociente = resto / moeda;
+		System.out.println(quociente + " moeda(s) de R$ 0.05");
+		resto = resto % moeda;
+
+        moeda = 1;
+		quociente = resto / moeda;
+		System.out.println(quociente + " moeda(s) de R$ 0.01");
+		resto = resto % moeda;
 
 
-
-		System.out.println(resto + " moeda(s) de R$ 0.01");
+		
 
 		sc.close();
 	}
 }
+
